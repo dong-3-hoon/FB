@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> throw</h1>
+    <form action="{% url 'calculators:result' %}" method="GET">
+        <label for="message">숫자를 입력하시오</label>
+        {% comment %} name로 구별함 {% endcomment %}
+        <input type="number" name="d1">
+        <label for="message">숫자를 입력하시오</label>
+        <input type="number" name="d2">
+        <input type="submit">
+    </form>
+{% endblock content %}

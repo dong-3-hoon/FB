@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+  <h1>Todo</h1>
+  <hr />
+  {% for todo in todos %}
+    {% if request.user == todo.author %}
+    <p><li><b>{{todo.author}} - {{todo.title}}</b></li></p>
+      
+    
+      <form action="{% url 'todos:change' todo.pk %}" method="POST">
+        {% csrf_token %}
+        {% if todo.completed %}
+          <input type="submit" value="완료">
+        {% else %}
+          <input type="submit" value="취소">
+        {% endif %}
+      </form>
+      <form action="{% url 'todos:delete' todo.pk %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="삭제">
+      </form>
+    {% endif %}
+    
+  {% endfor %} 
+
+{% endblock content %}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    .board {
+        width: 1200px;
+        height: 1000px;
+    }
+    .row {
+        display: flex;
+        width: 1200px;
+        height: 150px;
+    }
+    .info{
+      display: flex;
+      width: 1200px;
+      height: 100px;
+    }
+    .box {
+        content:url(m_bp)
+    }
+    .infobox{
+      width: 300px;
+      height: 100px;
+    }
+  </style>
+  <script src="./daily1_3.js">
+    let movie = movieInfo.results
+    movie.forEach(function(mv){
+      let m_bp = "https://image.tmdb.org/t/p/w300" + mv.backdrop_path
+      let m_title = mv.title
+      let m_rd = mv.release_date
+    })
+  </script>
+</head>
+<body>
+  <div>
+    <img id="m_bp" src="">
+      <script>document.getElementById('m_bp').src=movie</script>
+  </div>
+  <script>
+    // 이곳에 코드를 작성합니다.
+    // 포스터, 제목, 개봉일 출력
+      const li = document.createElement('li')
+      li.innerText=m_bp
+      document.querySelector('#img-list').appendChild(li)
+      const mi = document.createElement('mi')
+      mi.innerText=m_title
+      document.querySelector('#title-list').appendChild(mi)
+      const ri = document.createElement('ri')
+      ri.innerText=m_rd
+      document.querySelector('#date-list').appendChild(ri)
+  </script>
+  <div>
+    
+  </div>
+</body>
+</html>

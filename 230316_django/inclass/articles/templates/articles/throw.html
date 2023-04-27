@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> throw</h1>
+    <form action="{% url 'articles:catch' %}" method="GET">
+        <label for="message">보내고 싶은 데이터 적기1</label>
+        {% comment %} name로 구별함 {% endcomment %}
+        <input type="text" id="message" name="message">
+        <input type="submit">
+        <br>
+        <label for="message">보내고 싶은 데이터 적기2</label>
+        <input type="text" id="message" name="key">
+        <input type="submit">
+    </form>
+{% endblock content %}

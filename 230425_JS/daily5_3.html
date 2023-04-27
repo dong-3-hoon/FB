@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>인기영화</h1>
+    <ul>
+
+    </ul>
+    <ul id="M_list"></ul>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const M_URL = 'https://api.themoviedb.org/3/movie/popular?api_key=d838f386c11255ef5f578f676243694f&language=ko-KR&page=1'
+        axios.get(M_URL)
+        .then((response)=>{
+            for(var i=0;i<20;i++){
+                if(response.data.results[i].vote_average>=8){
+                    const famm = document.createElement('li')
+                    famm.innerText = response.data.results[i].title
+                    const parent = document.querySelector('ul')
+                    parent.appendChild(famm)
+                }
+            }
+        })
+    </script>
+    
+</body>
+</html>

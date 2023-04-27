@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>DETAIL</h1>
+    <h2>{{ movie.pk }} 번째 글</h2>
+    <hr>
+    <h3><p>title: {{ movie.title }}</p></h3>
+    <p>audience: {{ movie.audience }}</p>
+    <p>release_date: {{ movie.release_data }}</p>
+    <p>genre: {{ movie.genre }}</p>
+    <p>score: {{movie.score}}</p>
+    <p>poster_url: {{movie.poster_url}}</p>
+    <P>Actor: </P>
+    <p></p>
+    {% if movie.actor_image %}
+        <img src="{{movie.actor_image.url}}" /> 
+    {% endif %}
+    <p>{{movie.description}}</p>
+    <a href="{% url 'movies:update' movie.pk %}" class="btn btn-success">UPDATE</a>
+    <form action="{% url 'movies:delete' movie.pk %}" method="POST" >
+        {% csrf_token %}
+        <input type="submit" value="DELETE"class="btn btn-danger">
+    </form>
+    <a href="{% url 'movies:index' %}" class="btn btn-warning">BACK</a>
+{% endblock content %}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .board {
+            width: 800px;
+            height: 800px;
+        }
+        .row {
+            display: flex;
+            width: 800px;
+            height: 100px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border: 1.5px solid black;
+        }
+        .w_box{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border: 1.5px solid black;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <script>
+        let board = document.createElement("div")
+        board.className = 'board'
+
+        document.body.appendChild(board)
+        for (let i=0;i<8;i++){
+            let row = document.createElement("div")
+            row.className = 'row'
+            board.appendChild(row)
+            for(let j=0;j<8;j++){
+                if (i%2==0 && j%2==0){
+                    let box = document.createElement("div")
+                    box.className = 'box'
+                    row.appendChild(box)
+                }
+                else if(i%2!=0 && j%2==0){
+                    let w_box = document.createElement("div")
+                    w_box.className = 'w_box'
+                    row.appendChild(w_box)
+                }
+                else if(i%2==0 && j%2 !=0){
+                    let w_box = document.createElement("div")
+                    w_box.className = 'w_box'
+                    row.appendChild(w_box)
+                }
+                else{
+                    let box = document.createElement("div")
+                    box.className = 'box'
+                    row.appendChild(box)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
