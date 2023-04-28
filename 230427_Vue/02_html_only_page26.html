@@ -8,17 +8,18 @@
 </head>
 <body>
   <div id="app">
-    <p id="name">name : input에서 입력한 내용</p>
+    <p id="name">name :</p>
     <input id="inputName" type="text">
   </div>
-
+    
   <script>
     const name = document.querySelector('#name')
     const input = document.querySelector('input')
-    input.addEventListener('input', function(event){
-      name.innerText = 'name: '+event.target.value
+
+    input.addEventListener('input', function (event) {
+      name.innerText = 'name: ' + event.target.value
     })
-  </script>
+ </script>
     
 </body>
 </html>

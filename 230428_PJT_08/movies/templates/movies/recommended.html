@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block content %}
+<title>Recommended</title>
+    <h1>추천 영화</h1>
+    <a href="{% url 'movies:recommended' %}" class='btn btn-outline-dark'>재추천</a>
+    <hr>
+    {% for movie in movies %}
+        <h4><a href="{% url 'movies:detail' movie.pk %}">제목: {{movie.title}}</a></h4>
+        <h4 class="btn btn-warning">평점: {{movie.vote_average}}</h4>
+        <h5>장르</h5>
+        {% for genre in movie.genres.all %}
+            <span class="btn btn-outline-danger">{{genre.name}}</span>
+        {% endfor %}
+        <br>
+        <br>
+    {% endfor %}
+{% endblock content %}
+
+{% block script %}
+{% endblock script %}

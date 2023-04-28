@@ -127,4 +127,3 @@ def likes(request, article_pk):
         }
         return JsonResponse(context)
     return redirect('accounts:login')
-    
