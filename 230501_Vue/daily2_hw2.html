@@ -8,8 +8,8 @@
 </head>
 <body>
   <div id="app">
-    <div v-for="odd">
-      <p>빈 칸을 채워주세요</p>
+    <div v-for="i in odd">
+      <p>{{i}}</p>
     </div>
   </div>
 
@@ -22,9 +22,8 @@
       },
       computed:{
         odd(){
-          if(this.nums%2!=0){
-            console.log(this.nums)
-          }
+          oddnum//filter로 홀수만 걸러서 리스트를 리턴
+          return oddnum
         }
       }
     })
