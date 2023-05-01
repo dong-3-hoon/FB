@@ -8,8 +8,8 @@
 </head>
 <body>
   <div id="app">
-    <div v-for="i in odd">
-      <p>{{i}}</p>
+    <div v-for="num in odd">
+      <p>{{num}}</p>
     </div>
   </div>
 
@@ -17,15 +17,16 @@
   <script>
     const app = new Vue({
       el: '#app',
-      data: {
-        nums : [1, 2, 3, 4, 5, 6]
+      data() {
+        return {
+          nums: [1, 2, 3, 4, 5, 6],
+        };
       },
-      computed:{
-        odd(){
-          oddnum//filter로 홀수만 걸러서 리스트를 리턴
-          return oddnum
-        }
-      }
+      computed: {
+        odd() {
+          return this.nums.filter((num) => num % 2 === 1);
+        },
+      },
     })
   </script>
 </body>
