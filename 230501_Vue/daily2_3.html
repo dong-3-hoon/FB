@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .complited{
+            text-decoration: line-through;
+            color:gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="content" @keyup.enter="addTodo">
+        <button @click="addTodo">+</button>
+        <ul>
+            <li v-for="todo in todo_list"><input type="checkbox" v-model="todo.complited"><span :class="{complited: todo.complited}">{{todo.content}}</span></li>
+        </ul>
+        <button @click="deleteComplited">완료된 할 일 지우기</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data:{
+                todo_list:[],
+                filter_type:"전체", // select와 양방향 바인딩
+                content:""// input과 양방향 바인딩
+            },
+            methods:{
+                selectFilter(){
+                    console.log(this.filter_type)
+                },
+                addTodo(){
+                    if(this.content==""){
+                        window.alert("할 일을 입력하시오")
+                    }
+                    else{
+                        this.todo_list.push({"content":this.content,"complited":false})
+                    }
+                    this.content=""
+                },
+                deleteComplited(){
+                    this.todo_list=this.todo_list.filter((todo)=>{return !todo.complited})
+                    // updateStorage(this.todo_list)
+                },
+            },
+        })
+    </script>
+</body>
+</html>
