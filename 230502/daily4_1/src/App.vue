@@ -13,7 +13,7 @@
     </div>
     <hr>
     <div>
-      <span v-for='reser in reservation'>{{reser}}</span>
+      <span v-for='reser in reservation' :key="reser">{{reser}}</span>
     </div>
   </div>
 </template>
