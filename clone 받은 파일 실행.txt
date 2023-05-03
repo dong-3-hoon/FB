@@ -1,0 +1,1 @@
+터미널에 npm install

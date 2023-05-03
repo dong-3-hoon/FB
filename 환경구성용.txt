@@ -1,1 +1,4 @@
 sqlite viewer 다운
+
+설ㅊ치 가능(로대쉬도 가능)
+npm install --save axios
