@@ -1,1 +1,3 @@
 터미널에 npm install
+vuex 추가하기
+vue add vuex
