@@ -1,3 +1,13 @@
 터미널에 npm install
 vuex 추가하기
 vue add vuex
+
+sqlite viewer 다운
+
+설ㅊ치 가능(로대쉬도 가능)
+npm install --save axios
+
+local storage plugin
+npm i vuex-persistedstate
+
+vue add router은 프로젝트 시작할 때 하기
