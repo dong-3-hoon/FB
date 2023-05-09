@@ -5,3 +5,5 @@ npm install --save axios
 
 local storage plugin
 npm i vuex-persistedstate
+
+vue add router은 프로젝트 시작할 때 하기
