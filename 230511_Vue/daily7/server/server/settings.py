@@ -63,7 +63,7 @@ CORS_ALLOWED_ORIGINS=[
     'http://localhost:8080',
 ]
 
-CORS_ALLOWED_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'server.urls'
 
