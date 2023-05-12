@@ -1,6 +1,4 @@
 터미널에 npm install
-vuex 추가하기
-vue add vuex
 
 sqlite viewer 다운
 
@@ -11,3 +9,24 @@ local storage plugin
 npm i vuex-persistedstate
 
 vue add router은 프로젝트 시작할 때 하기
+
+
+
+
+vue add router
+
+vuex 추가하기
+vue add vuex
+
+npm i axios
+
+npm i bootstrap
+main.js에 선언해주기
+
+api 쉽게 관리하기
+프로젝트 파일 안에
+.env.local 파일 생성
+파일안에
+VUE_APP_SOME_API_KEY = apikey
+
+vue 파일 안에 process.env.VUE_APP_SOME_API_KEY 로 키를 불러옴
