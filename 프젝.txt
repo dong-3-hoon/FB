@@ -1,0 +1,2 @@
+https://djangogirlsseoul.gitbooks.io/django-tube/content/03-Django-Model.html
+
