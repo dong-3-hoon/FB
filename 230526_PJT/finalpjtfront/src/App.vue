@@ -170,7 +170,7 @@
 </template>
 <script>
 import axios from "axios";
-const API_KEY = 'ec722859ccc1fe77704b2851d8456d03'
+const API_KEY = '프라이베이트안에있는api'
 
 export default {
   setup() {},
