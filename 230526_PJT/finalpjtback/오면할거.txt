@@ -1,0 +1,48 @@
+dumpdata, loaddata
+python manage.py dumpdata articles.Article > articles.json
+python manage.py loaddata articles/fixtures/articles.json
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg0NTQxOTAzLCJpYXQiOjE2ODQ0NTU1MDMsImp0aSI6IjlkMzA3YzNlODlmMDQ0MjVhOWU3Yjk4NmMzY2E1ZWY2IiwidXNlcl9pZCI6MX0.uGo-BkelS5LUVxt1FvCoz4_H9UQeieOs8VLvw8EEcn0
+
+22
+https://sir.kr/qa/48964
+
+
+
+
+
+20~21
+1. articles 페이지 만들기
+권한없음이 생성되는 오류 발견
+axios 신호 전송 시 Token 으로 보냈음 (Bearer로 보내야 되는데)
+2. profile 페이지 만들기
+
+
+19
+1. 프로필 사진 받을 url
+2. user에 프로필 사진 필드 o
+3. 미디어
+4. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18
+article 조회 시 생성된 토큰이 작동하지 않는 문제 발생
+settings에 안 넣은 코드 존재 - installation 을 처음에 잘 읽자
+
+userserializer 생성학'
+필드값은 닉네임(lastname), 
+

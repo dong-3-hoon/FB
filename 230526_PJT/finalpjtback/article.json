@@ -1,0 +1,64 @@
+[
+{
+    "model": "articles.article",
+    "pk": 4,
+    "fields": {
+        "user": 2,
+        "title": "게시물 테스트",
+        "content": "게시물",
+        "created_at": "2023-05-25T02:02:37.442Z",
+        "updated_at": "2023-05-25T02:02:37.442Z",
+        "like_users": []
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 6,
+    "fields": {
+        "user": 3,
+        "title": "12312",
+        "content": "123123",
+        "created_at": "2023-05-25T08:47:58.908Z",
+        "updated_at": "2023-05-25T08:47:58.908Z",
+        "like_users": []
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 7,
+    "fields": {
+        "user": 3,
+        "title": "123123123",
+        "content": "12412412412",
+        "created_at": "2023-05-25T08:48:01.665Z",
+        "updated_at": "2023-05-25T08:48:01.665Z",
+        "like_users": [
+            1
+        ]
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 8,
+    "fields": {
+        "user": 1,
+        "title": "오늘 본 영화 추천합니다!",
+        "content": "오늘 영화관에서 '셉션을 봤는데 너무 멋진 영화입니다. 꿈 속으로 들어가는 이야기와 그래픽, 연기 등 모두 완벽했습니다. 꼭 한 번 시청해보세요!",
+        "created_at": "2023-05-26T00:26:34.928Z",
+        "updated_at": "2023-05-26T00:26:34.928Z",
+        "like_users": []
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 9,
+    "fields": {
+        "user": 2,
+        "title": "공포 영화 추천드립니다!",
+        "content": "요즘 공포 영화 중에 '겟 아웃'이라는 영화를 보았는데, 귀에 맺히는 음악과 짜릿한 스토리텔링이 너무 좋았습니다. 공포 영화 좋아하시는 분들께 추천드려요!",
+        "created_at": "2023-05-26T00:28:42.476Z",
+        "updated_at": "2023-05-26T00:28:42.476Z",
+        "like_users": []
+    }
+}
+]

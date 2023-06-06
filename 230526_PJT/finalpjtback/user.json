@@ -1,0 +1,111 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$hAAdqxpGTjhln1QBvwu4cm$h4+K2jI5niebIYNZFxOsnKTrHuK89HBUS0crbEQaP1Y=",
+        "last_login": "2023-05-24T23:40:09.508Z",
+        "is_superuser": false,
+        "username": "duljji",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-24T23:40:09.358Z",
+        "nickname": "들쮜",
+        "profile_image": "들쮜_zmA0Kw8.jpg",
+        "groups": [],
+        "user_permissions": [],
+        "followings": [
+            3
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$Lpuf03gHCBs8P6wd9rsY0i$2gSVQWd5AUgezL/M7oTJSIuEwlfys4d3AG170NuoUgM=",
+        "last_login": "2023-05-25T00:46:20.809Z",
+        "is_superuser": false,
+        "username": "user",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-25T00:46:20.666Z",
+        "nickname": "고양이",
+        "profile_image": "고양이.png",
+        "groups": [],
+        "user_permissions": [],
+        "followings": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$Jh1kCfiO8bAAz33luLPiMy$3tDZgilI00ngiPAm7EGL42n6i6iyR/OLrCXLSvHM6zw=",
+        "last_login": "2023-05-25T08:43:42.923Z",
+        "is_superuser": false,
+        "username": "duljji2",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-25T08:43:42.777Z",
+        "nickname": "duljji2",
+        "profile_image": "",
+        "groups": [],
+        "user_permissions": [],
+        "followings": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$rWPpRhdMxbkYqxW7LH45kY$31sjSgNO68yUhUg72Az0sRqhXdeIJ48tjEqPldZ8CLU=",
+        "last_login": "2023-05-25T23:56:12.867Z",
+        "is_superuser": false,
+        "username": "dong.3.hoon",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-25T23:56:12.721Z",
+        "nickname": "dong.3.hoon",
+        "profile_image": "",
+        "groups": [],
+        "user_permissions": [],
+        "followings": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$r7zvbwnckt4ZZsDJje8awc$rRzUYuJ17GgW3/SIa4fMB/oq53sMbosHrwfvrZ4IS5M=",
+        "last_login": "2023-05-26T00:27:07.583Z",
+        "is_superuser": false,
+        "username": "user1",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-26T00:27:07.402Z",
+        "nickname": "공포영화광",
+        "profile_image": "스크림.png",
+        "groups": [],
+        "user_permissions": [],
+        "followings": []
+    }
+}
+]

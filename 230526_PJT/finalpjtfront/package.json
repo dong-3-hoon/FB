@@ -1,0 +1,44 @@
+{
+  "name": "finalpjtfront",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-vue": "^2.23.1",
+    "compass-mixins": "^0.12.12",
+    "core-js": "^3.8.3",
+    "gsap": "^3.11.5",
+    "hover.css": "^2.3.2",
+    "mdb-ui-kit": "^6.3.0",
+    "swiper": "^9.3.2",
+    "typeit": "^8.7.1",
+    "vue": "^2.7.14",
+    "vue-persistedstate": "^1.2.5",
+    "vue-router": "^3.5.1",
+    "vue-youtube": "^1.4.0",
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.82.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
